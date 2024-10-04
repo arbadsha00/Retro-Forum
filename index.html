@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Forum</title>
+    <!-- daisyui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark1: "#12132D",
+              primary: "#797DFC",
+              gray1: "#F3F3F5",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/374ce514ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-Outfit {
+        font-family: "Outfit", system-ui;
+      }
+    </style>
+  </head>
+  <body class="font-Outfit">
+    <header class="container mx-auto px-3 py-6 lg:py-10">
+      <nav class="flex justify-between items-center">
+        <!-- logo -->
+        <div class="flex items-center gap-2">
+          <div><img src="./images/icon.png" alt="" /></div>
+          <div class="hidden md:flex">
+            <img src="./images/logo.png" alt="" />
+          </div>
+        </div>
+        <!-- button -->
+        <div class="flex gap-1 md:gap-3 items-center">
+          <button class="btn btn-circle md:text-lg text-gray-400 btn-sm md:btn-md">
+            <i class="fa-solid fa-house"></i>
+          </button>
+          <button class="btn btn-circle md:text-lg text-gray-400 btn-sm md:btn-md">
+            <i class="fa-solid fa-pen"></i>
+          </button>
+          <button class="btn btn-circle md:text-lg text-gray-400 btn-sm md:btn-md">
+            <i class="fa-solid fa-user-plus"></i>
+          </button>
+          <button class="btn btn-circle md:text-lg text-gray-400 btn-sm md:btn-md">
+            <i class="fa-solid fa-flag"></i>
+          </button>
+          <button
+            class="btn bg-primary text-white rounded-full md:text-lg md:px-6"
+          >
+            Sign In
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
