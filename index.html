@@ -44,8 +44,8 @@
     </style>
   </head>
   <body class="font-Outfit">
-    <header class="container mx-auto px-3 py-6 lg:py-10">
-      <nav class="flex justify-between items-center">
+    <header class="container mx-auto w-11/12 lg:w-10/12 my-6 lg:my-12">
+      <nav class="flex justify-between items-center lg:mb-12">
         <!-- logo -->
         <div class="flex items-center gap-2">
           <div><img src="./images/icon.png" alt="" /></div>
@@ -84,13 +84,13 @@
       </nav>
       <!-- banner -->
       <section
-        class="bg-dark1 rounded-xl p-3 md:p-6 lg:p-20 bg-[url('./images/bgbanner.png')] bg-no-repeat bg-cover  my-6 lg:my-10 flex flex-col md:flex-row justify-between gap-10 items-center"
+        class="bg-dark1 rounded-xl p-3 md:p-6 lg:p-20 bg-[url('./images/bgbanner.png')] bg-no-repeat bg-cover my-6 lg:my-10 flex flex-col md:flex-row justify-between gap-10 items-center"
       >
         <div class="space-y-3 md:space-y-6">
           <h1
             class="text-white font-extrabold text-4xl md:text-5xl lg:text-7xl"
           >
-            Welcome to the <br /><span class="text-primary ">ReTro</span> Forum
+            Welcome to the <br /><span class="text-primary">ReTro</span> Forum
           </h1>
           <p class="text-white font-light">
             Share your favorite opinion and win forum coffee mug!
@@ -130,7 +130,74 @@
         </div>
       </section>
     </header>
-    <main></main>
+    <main class="container mx-auto w-11/12 lg:w-10/12 my-6 lg:my-12">
+      <!-- discuss -->
+      <div
+        class="flex flex-col items-center justify-center text-center lg:w-3/5 mx-auto space-y-6 my-6"
+      >
+        <h1 class="text-4xl font-bold">Let's Discuss</h1>
+        <p class="text-gray-400">
+          With the modern design and the latest features, you can discuss
+          whatever you want and see other people's opinions or discussions, also
+          you can see by categories and mark as read.
+        </p>
+      </div>
+      <!-- dynamic section -->
+      <div class="flex flex-col lg:flex-row  gap-5 my-6 ">
+        <!-- post container -->
+        <div id="post-container" class="space-y-5 lg:w-8/12">
+          <div class="flex gap-5 bg-gray1 rounded-xl p-6 ">
+            <div class="flex">
+              <div class="w-16 h-16">
+                <img
+                  src="./images/icon.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="badge badge-primary badge-sm"></div>
+            </div>
+            <div class="space-y-1 w-full">
+              <div class="flex gap-6 text-gray-600">
+                <span>#Music</span>
+                <h1>Author : <span>robert</span></h1>
+              </div>
+              <h1 class="font-semibold text-2xl">10 Kids</h1>
+              <p class="text-gray-500">description</p>
+              <div class="divider"></div>
+              <div class="flex justify-between items-center">
+                <div class="flex text-gray-500 gap-5">
+                  <div><i class="fa-regular fa-message"></i> 560</div>
+                  <div><i class="fa-regular fa-eye"></i> 600</div>
+                  <div><i class="fa-regular fa-clock"></i> 5 min</div>
+                </div>
+                <div>
+                  <button class="btn btn-circle btn-sm bg-green-500 text-white">
+                    <i class="fa-regular fa-envelope-open"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+        <!-- post counter -->
+         <div class="lg:w-4/12">
+          <div class="rounded-xl bg-gray1 p-6 space-y-3 ">
+            <div class="flex justify-between items-center">
+              <div><h1 class="font-semibold text-xl">Title</h1></div>
+              <div class="text-gray-500"><i class="fa-solid fa-check-double text-green-500"></i>mark as read (<span>0</span>)</div>
+            </div>
+            <div class="bg-white rounded-full flex gap-6 p-3 items-center justify-between">
+              <h1 class="font-semibold text-xl">ddsvdvdsvdvsd</h1>
+              <span class="text-gray-500"><i class="fa-regular fa-eye"></i> 600</span>
+            </div>
+  
+          </div>
+         </div>
+        
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
