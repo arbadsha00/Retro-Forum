@@ -55,16 +55,24 @@
         </div>
         <!-- button -->
         <div class="flex gap-1 md:gap-3 items-center">
-          <button class="btn btn-circle md:text-lg text-gray-400 btn-sm md:btn-md">
+          <button
+            class="btn btn-circle md:text-lg text-gray-400 btn-sm md:btn-md"
+          >
             <i class="fa-solid fa-house"></i>
           </button>
-          <button class="btn btn-circle md:text-lg text-gray-400 btn-sm md:btn-md">
+          <button
+            class="btn btn-circle md:text-lg text-gray-400 btn-sm md:btn-md"
+          >
             <i class="fa-solid fa-pen"></i>
           </button>
-          <button class="btn btn-circle md:text-lg text-gray-400 btn-sm md:btn-md">
+          <button
+            class="btn btn-circle md:text-lg text-gray-400 btn-sm md:btn-md"
+          >
             <i class="fa-solid fa-user-plus"></i>
           </button>
-          <button class="btn btn-circle md:text-lg text-gray-400 btn-sm md:btn-md">
+          <button
+            class="btn btn-circle md:text-lg text-gray-400 btn-sm md:btn-md"
+          >
             <i class="fa-solid fa-flag"></i>
           </button>
           <button
@@ -74,6 +82,53 @@
           </button>
         </div>
       </nav>
+      <!-- banner -->
+      <section
+        class="bg-dark1 rounded-xl p-3 md:p-6 lg:p-20 bg-[url('./images/bgbanner.png')] bg-no-repeat bg-cover  my-6 lg:my-10 flex flex-col md:flex-row justify-between gap-10 items-center"
+      >
+        <div class="space-y-3 md:space-y-6">
+          <h1
+            class="text-white font-extrabold text-4xl md:text-5xl lg:text-7xl"
+          >
+            Welcome to the <br /><span class="text-primary ">ReTro</span> Forum
+          </h1>
+          <p class="text-white font-light">
+            Share your favorite opinion and win forum coffee mug!
+          </p>
+          <label
+            class="input input-bordered flex items-center gap-2 rounded-full py-6 px-0"
+          >
+            <input
+              type="text"
+              class="grow pl-6"
+              placeholder="Search here anything"
+            />
+            <button
+              class="btn bg-primary text-white rounded-full md:text-lg md:px-6"
+            >
+              Search
+            </button>
+          </label>
+        </div>
+        <div class="bg-white p-6 rounded-xl w-60 space-y-3 lg:text-lg">
+          <div class="flex justify-between">
+            <h3>Registered Users</h3>
+            <span>01</span>
+          </div>
+          <div class="flex justify-between">
+            <h3>Forum</h3>
+            <span>05</span>
+          </div>
+          <div class="flex justify-between">
+            <h3>Topics</h3>
+            <span>01</span>
+          </div>
+          <div class="flex justify-between">
+            <h3>Replies</h3>
+            <span>01</span>
+          </div>
+        </div>
+      </section>
     </header>
     <main></main>
     <footer></footer>
