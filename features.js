@@ -20,7 +20,9 @@ const displayPosts = (posts) => {
                   class="w-full h-full rounded-lg object-cover"
                 />
               </div>
-              <div class="badge border-none badge-primary badge-sm ${post.isActive==true?"bg-green-500":"bg-red-500"}"></div>
+              <div class="badge border-none badge-primary badge-sm ${
+                post.isActive == true ? "bg-green-500" : "bg-red-500"
+              }"></div>
             </div>
             <div class="space-y-1 w-full">
               <div class="flex gap-6 text-gray-600">
@@ -32,9 +34,15 @@ const displayPosts = (posts) => {
               <div class="divider"></div>
               <div class="flex justify-between items-center">
                 <div class="flex text-gray-500 gap-5">
-                  <div><i class="fa-regular fa-message"></i> ${post.comment_count}</div>
-                  <div><i class="fa-regular fa-eye"></i> ${post.view_count}</div>
-                  <div><i class="fa-regular fa-clock"></i> ${post.posted_time} min</div>
+                  <div><i class="fa-regular fa-message"></i> ${
+                    post.comment_count
+                  }</div>
+                  <div><i class="fa-regular fa-eye"></i> ${
+                    post.view_count
+                  }</div>
+                  <div><i class="fa-regular fa-clock"></i> ${
+                    post.posted_time
+                  } min</div>
                 </div>
                 <div>
                   <button onclick="counter('${post.title}','${post.view_count}')" class="btn btn-circle btn-sm bg-green-500 text-white">
@@ -44,31 +52,36 @@ const displayPosts = (posts) => {
               </div>
             </div>
           </div>`;
-      
-      postContainer.appendChild(div);
-      
+
+    postContainer.appendChild(div);
+    
   });
 };
+
 const counter = (title, view_count) => {
-    console.log(title);
-    const postCounter = document.getElementById("post-counter");
-    const div = document.createElement("div");
-    div.innerHTML = `<div
-              class="bg-white rounded-full flex gap-6 p-3 items-center justify-between"
+  const postCounter = document.getElementById("post-counter");
+  const div = document.createElement("div");
+  div.innerHTML = `<div
+              class="bg-white rounded-xl flex gap-6 p-3 items-center justify-between"
             >
               <h1 class="font-semibold text-xl">${title}</h1>
               <span class="text-gray-500"
                 ><i class="fa-regular fa-eye"></i> ${view_count}</span
               >
             </div>`;
-    
-    postCounter.appendChild(div);
-    counterHandler();
-}
+
+  postCounter.appendChild(div);
+  counterHandler();
+};
 
 const counterHandler = () => {
-    let totalView = parseInt(document.getElementById("total-view").innerText);
-    totalView++;
-    document.getElementById("total-view").innerText = totalView;
-}
+  let totalView = parseInt(document.getElementById("total-view").innerText);
+  totalView++;
+  document.getElementById("total-view").innerText = totalView;
+};
+document.getElementById("search-btn").addEventListener("click", (e) => {
+  const search = document.getElementById("search").value;
+  loadPosts(search);
+  document.getElementById("search").value = "";
+});
 loadPosts();

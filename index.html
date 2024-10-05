@@ -100,12 +100,13 @@
             class="input input-bordered flex items-center gap-2 rounded-full py-6 px-0"
           >
             <input
-            id="search"
+              id="search"
               type="text"
               class="grow pl-6"
               placeholder="Search here anything"
             />
             <button
+              id="search-btn"
               class="btn bg-primary text-white rounded-full md:text-lg md:px-6"
             >
               Search
@@ -145,7 +146,7 @@
         </p>
       </div>
       <!-- dynamic section -->
-      <div class="flex flex-col lg:flex-row gap-5 my-6">
+      <div class="flex flex-col lg:flex-row gap-5 my-6 lg:my-12">
         <!-- post container -->
         <div id="post-container" class="space-y-5 lg:w-8/12">
           <div class="flex gap-5 bg-gray1 rounded-xl p-6">
@@ -183,7 +184,7 @@
           </div>
         </div>
         <!-- post counter -->
-        <div  class="lg:w-4/12">
+        <div class="lg:w-4/12">
           <div id="post-counter" class="rounded-xl bg-gray1 p-6 space-y-3">
             <div class="flex justify-between items-center">
               <div><h1 class="font-semibold text-xl">Title</h1></div>
@@ -192,10 +193,40 @@
                 read (<span id="total-view">0</span>)
               </div>
             </div>
-            
           </div>
         </div>
       </div>
+      <!-- join -->
+      <div
+        class="flex flex-col lg:flex-row gap-6 p-6 md:p-10 lg:p-16 rounded-xl bg-dark1 justify-between items-center my-6 lg:my-16"
+      >
+        <div class="space-y-6">
+          <h1 class="text-white font-extrabold text-5xl">Join Our Forum</h1>
+          <p class="text-gray-400">
+            you can discuss whatever you want and see other people's opinions or
+            discussions, also you can see by categories and mark as read.
+          </p>
+          <button
+            class="btn bg-primary text-white rounded-full md:text-lg md:px-6 border-none"
+          >
+            Register Now
+          </button>
+        </div>
+        <div class="">
+          <img src="./images/join-01.png" alt="" />
+        </div>
+      </div>
+      <!-- post section -->
+      <div
+      class="flex flex-col items-center justify-center text-center lg:w-3/5 mx-auto space-y-6 my-6"
+    >
+      <h1 class="text-4xl font-bold">Latest Posts</h1>
+      <p class="text-gray-400">
+        With the modern design and the latest features, you can discuss
+        whatever you want and see other people's opinions or discussions, also
+        you can see by categories and mark as read.
+      </p>
+    </div>
     </main>
     <footer></footer>
     <script src="./features.js"></script>
